@@ -1,5 +1,4 @@
 function DessertsList(props) {
-    // Implement the component here.
     const listItems = props.data
       .filter(dessert => dessert.calories <= 500)
       .sort((a, b) => a.calories - b.calories)
